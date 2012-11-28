@@ -72,6 +72,6 @@ if len(sys.argv) > 1:
     limiter = sys.argv[1]
 
 for student in gradesByLastName:
-    if not limit  or limiter in student.firstName or limiter in student.lastName:
+    if not limit or limiter in student.firstName or limiter in student.lastName:
         print '{0} {1} recieves a {2} ({3})'.format(student.lastName,
             student.firstName, student.finalLetter, student.finalGrade)
